@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<!-- hello everyone this is amarjeet  -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School website | Amarjeet</title>
+   <link rel="stylesheet" href="style.css">
+   
+    <!-- Fontawesome Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h2 class="logo"><a href="amarjeet.jpg">InsaneNotes</a></h2>
+        <input type="checkbox" id="menu-toggler">
+        <label for="menu-toggler" id="hamburger-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </label>
+        <ul class="all-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Team Members</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="/Earning/index.html">Earning </a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="homepage" id="home">
+      <div class="content">
+        <div class="text">
+          <!-- <h1>Camping Gear and Essentials</h1> -->
+          <h1 >S.V Kakrola 1618009</h1>
+          <!-- <h3>1618009</h3> -->
+          
+          <p>
+             <!-- <br> Gear up and make lasting memories.</p> -->
+             <!-- <br> Gear up and make lasting memories.</p> -->
+        </div>
+       
+        
+        <a href="matrails page/index.html"target="_main">Materials</a>
+        
+        
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <h2 class="heading">Team Members</h2>
+      <ul class="cards">
+        <li class="card">
+          <img src="images/sita ram sir ji.jpg" alt="Sita Ram">
+          <h3>Sita Ram Sir Meena sir ji</h3>
+        </li>
+        <li class="card">
+          <img src="images/amarjeet.jpg" alt="Amarjeet" class="clickable-image">
+          <h3 class="special-text">Amarjeet Ram 12<sup>th</sup></h3>
+          <p>Leader of <a href="">Insanenotes.com</a><br>
+            I am a Full Stack <a href="">Web Developer | Designer</a>
+          </p>
+        </li>
+        <li class="card">
+          <img src="images/manmindar_pandey.jpg" alt="Manmindar Pandey">
+          <h3>Manmindar Pandey</h3>
+          <p>Markiting head</p>
+        </li>
+        <li class="card">
+          <img src="images/sachin.jpg" alt="Sachin">
+          <h3>Sachin</h3>
+          <p>COO of Insanenotes.com</p>
+        </li>
+        <li class="card">
+          <img src="images/hemant.jpg" alt="Hemant">
+          <h3>Hemant</h3>
+          <p>Helper</p>
+        </li>
+        <li class="card">
+          <img src="images/ahmad.jpg" alt="Ahmad">
+          <h3>Ahmad</h3>
+          <p>CFO</p>
+        </li>
+      </ul>
+    </section>
+    
+    <style>
+      /* General Styles */
+      .card {
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: center;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border: 2px solid transparent; /* Thinner border */
+        animation: borderColorChange 7s infinite; /* Original animation time */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+    
+      @keyframes borderColorChange {
+        0%   { border-color: #ff0000; } /* Red */
+        14%  { border-color: #ff7f00; } /* Orange */
+        28%  { border-color: #ffff00; } /* Yellow */
+        42%  { border-color: #00ff00; } /* Green */
+        57%  { border-color: #0000ff; } /* Blue */
+        71%  { border-color: #4b0082; } /* Indigo */
+        85%  { border-color: #9400d3; } /* Violet */
+        100% { border-color: #ff0000; } /* Back to Red */
+      }
+    
+      .special-text {
+        font-family: 'Cursive', sans-serif; /* Creative font */
+        font-size: 1.8em;
+        font-weight: bold;
+        color: #e67e22;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        letter-spacing: 1px;
+        transition: color 0.3s ease;
+      }
+    
+      .special-text:hover,
+      .special-text.permanent-hover {
+        color: #d35400; /* Permanent darker orange */
+      }
+    
+      /* Styling the cards' general layout */
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+        justify-content: space-around;
+      }
+    
+      .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+      }
+    
+      .card img:hover {
+        transform: scale(1.1);
+      }
+    
+      .card h3 {
+        margin-top: 15px;
+        font-size: 1.5em;
+        color: #333;
+      }
+    
+      .card p {
+        font-size: 1em;
+        color: #666;
+        margin-top: 10px;
+      }
+    
+      .card a {
+        text-decoration: none;
+        color: #3498db;
+        font-weight: bold;
+      }
+    
+      .card a:hover {
+        text-decoration: underline;
+      }
+    
+      /* Permanent style for the Team Members heading */
+      .heading {
+        font-family: 'Poppins', sans-serif;
+        font-size: 2.5em;
+        text-align: center;
+        color: #2c3e50; /* Permanent dark color */
+        margin-bottom: 40px;
+        transition: color 0.3s ease, transform 0.3s ease;
+      }
+    
+      /* Hover effect for Team Members heading */
+      .heading:hover {
+        color: #3498db; /* Light blue color on hover */
+      }
+    
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        .cards {
+          flex-direction: column;
+          align-items: center;
+        }
+    
+        .special-text {
+          font-size: 1.5em; /* Adjusted font size for mobile */
+        }
+    
+        .card {
+          width: 90%;
+          margin-bottom: 20px;
+        }
+    
+        .heading {
+          font-size: 2em; /* Adjusted heading size for mobile */
+        }
+      }
+    
+      /* Importing Google Font */
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+    </style>
+    
+    <script>
+      // Make Amarjeet's text hover effect permanent after first hover or click
+      const specialText = document.querySelector('.special-text');
+      specialText.addEventListener('mouseover', function() {
+        this.classList.add('permanent-hover');
+      });
+    
+      // Ensure tap on mobile also triggers permanent hover
+      specialText.addEventListener('click', function() {
+        this.classList.add('permanent-hover');
+      });
+    
+      // Add click event to the card to apply hover effect
+      const cards = document.querySelectorAll('.card');
+      cards.forEach(card => {
+        card.addEventListener('click', function() {
+          specialText.classList.add('permanent-hover');
+        });
+      });
+    
+      // Redirect to another page when Amarjeet's image is clicked
+      document.querySelector('.clickable-image').addEventListener('click', function() {
+        window.location.href = 'https://your-redirect-page-url.com'; // Replace with your URL
+      });
+    </script>
+    
+    
+
+    
+    <section class="about" id="about">
+      <!-- <h2>About Us</h2> -->
+       <div class="about">
+      <main>
+        <h1>About  to InsaneNotes.com</h1>
+        <br>
+        <h2>Your Source for Quality Educational Resources</h2>
+        <p>We provide a range of study materials to help students in grades 9 to 12 excel academically:</p>
+        <div class="highlight">
+            <ul>
+                <li><strong>Notes and Study Material:</strong> Comprehensive notes for all subjects.</li>
+                <li><strong>Sample Papers:</strong> Practice papers for 9th through 12th grades.</li>
+                <li><strong>CBSE Repeated Questions:</strong> Past exam questions for 10th and 12th grades.</li>
+            </ul>
+        </div>
+        <p><strong>Why Choose Us?</strong></p>
+        <div class="highlight">
+            <ul>
+                <li>Expert-curated, high-quality content.</li>
+                <li>User-friendly interface for easy navigation.</li>
+                <li>Regular updates with the latest educational materials.</li>
+            </ul>
+        </div>
+        <p>Explore our categories, download the resources you need, and contact us for any assistance.</p>
+        <p>Thank you for choosing us. Happy studying!</p>
+      
+    </main>
+       </div>
+    </section>
+
+
+  <style>
+    /* Contact Section Styling */
+    .contact {
+      background-color: #f9f9f9;
+      padding: 50px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .contact p {
+      color: #666;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .col {
+      flex: 1;
+      padding: 20px;
+      min-width: 300px;
+    }
+
+    .contact-details p {
+      margin: 15px 0;
+      font-size: 16px;
+    }
+
+    .contact-details i {
+      color: #ff5722;
+      margin-right: 10px;
+    }
+
+    .contact-details a {
+      text-decoration: none;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+
+    .contact-details a:hover {
+      color: #ff5722;
+    }
+
+    /* Form Styling */
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    form input, form textarea {
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      color: #333;
+      background-color: #fff;
+      transition: all 0.3s ease;
+    }
+
+    form input:focus, form textarea:focus {
+      border-color: #ff5722;
+      box-shadow: 0 0 5px rgba(255, 87, 34, 0.5);
+      outline: none;
+    }
+
+    form textarea {
+      height: 100px;
+      resize: none;
+    }
+
+    button#submit {
+      padding: 10px 20px;
+      border: none;
+      background-color: #ff5722;
+      color: white;
+      font-size: 18px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button#submit:hover {
+      background-color: #e64a19;
+    }
+
+    /* Hover Effects */
+    .contact-details p:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+
+    .contact-details i:hover {
+      color: #e64a19;
+    }
+
+  </style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* General Styling */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    h2, p {
+      margin: 0;
+    }
+
+    /* Contact Section Styling */
+    .contact {
+      background-color: #ffffff;
+      padding: 40px 20px;  /* Adjusted padding for all screens */
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Page Shadow */
+      transition: all 0.3s ease-in-out;
+    }
+
+    .contact h2 {
+      font-size: 28px;  /* Adjust font size */
+      margin-bottom: 5px;  /* Reduced spacing below "Contact Us" */
+      color: #333;
+      transition: color 0.3s ease;
+    }
+
+    .contact h2:hover {
+      color: #ff5722;  /* Orange color on hover */
+    }
+
+    .contact p {
+      color: #666;
+      font-size: 14px;  /* Reduced font size */
+      margin-bottom: 15px;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      text-align: center;  /* Center the content */
+    }
+
+    .col {
+      flex: 1;
+      padding: 10px;  /* Reduced padding */
+      min-width: 300px;
+    }
+
+    .contact-details {
+      margin-top: 10px;  /* Reduced spacing between Contact Us and details */
+    }
+
+    .contact-details p {
+      margin: 8px 0;  /* Reduce spacing between contact details */
+      font-size: 14px;  /* Reduced font size */
+    }
+
+    .contact-details i {
+      color: #ff5722;
+      margin-right: 8px;
+    }
+
+    .contact-details a {
+      text-decoration: none;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+
+    .contact-details a:hover {
+      color: #ff5722;
+    }
+
+    /* Form Styling */
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;  /* Center form elements */
+    }
+
+    form input, form textarea {
+      margin-bottom: 12px;
+      padding: 12px;  /* Reduced padding for mobile */
+      width: 100%;  /* Ensure input and textarea are full width */
+      max-width: 350px;  /* Limit max width for inputs */
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;  /* Reduced font size */
+      color: #333;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    form input:focus, form textarea:focus {
+      border-color: #ff5722;
+      box-shadow: 0 0 10px rgba(255, 87, 34, 0.5);
+      outline: none;
+    }
+
+    form textarea {
+      height: 80px;  /* Reduced textarea height */
+      resize: none;
+    }
+
+    /* Button Styling */
+    button#submit {
+      padding: 12px 20px;
+      border: none;
+      background-color: #ff5722;
+      color: white;
+      font-size: 16px;  /* Adjust button font size */
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(255, 87, 34, 0.4);
+      max-width: 200px;  /* Limit button width */
+    }
+
+    button#submit:hover {
+      background-color: #ff3d00; /* Smooth color transition */
+      transform: scale(1.05);    /* Button grows slightly on hover */
+      box-shadow: 0 8px 25px rgba(255, 61, 0, 0.5); /* Stronger shadow */
+    }
+
+    /* Media Queries for Responsiveness */
+    @media (max-width: 600px) {
+      .row {
+        flex-direction: column;  /* Stack columns on mobile */
+        align-items: center;  /* Center the columns */
+      }
+
+      .contact h2 {
+        font-size: 24px;
+      }
+
+      .contact p {
+        font-size: 12px;
+      }
+
+      .contact-details p, form input, form textarea, button#submit {
+        font-size: 12px;  /* Reduce input font size */
+        padding: 10px;
+      }
+
+      form textarea {
+        height: 70px;  /* Further reduce textarea height */
+      }
+
+      button#submit {
+        width: 100%;  /* Make button full width */
+      }
+    }
+
+    @media (min-width: 601px) and (max-width: 1024px) {
+      .contact h2 {
+        font-size: 28px;
+      }
+
+      .contact p {
+        font-size: 14px;
+      }
+
+      .contact-details p, form input, form textarea, button#submit {
+        font-size: 14px;
+        padding: 12px;
+      }
+
+      form textarea {
+        height: 80px;
+      }
+    }
+
+    @media (min-width: 1025px) {
+      .contact h2 {
+        font-size: 32px;
+      }
+
+      .contact p {
+        font-size: 16px;
+      }
+
+      .contact-details p, form input, form textarea, button#submit {
+        font-size: 16px;
+        padding: 15px;
+      }
+
+      form textarea {
+        height: 100px;
+      }
+    }
+    /* h2{
+      color: #ff5722;
+    } */
+    
+  </style>
+</head>
+<body>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>We're here to assist you with any questions or help you may need regarding our website. Feel free to reach out, and we'll respond as soon as possible.</p>
+    <div class="row">
+      <div class="col information">
+        <div class="contact-details">
+          <p><i class="fas fa-map-marker-alt"></i> Sarvodaya Vidyalaya, Kakrola, 1618009 New Delhi, 110078</p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:amarjeetkumar.195123@gmail.com">amarjeetkumar.195123@gmail.com</a></p>
+          <p><i class="fas fa-phone"></i> <a href="tel:+918383921208">8383921208</a></p>
+          <p><i class="fas fa-globe"></i> <a href="https://www.instagram.com/insane_notes" target="_blank">Instagram | Insane_Notes</a></p>
+        </div>
+      </div>
+      <div class="col form">
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Name*" required aria-label="Your name">
+          <input type="email" name="email" placeholder="Email*" required aria-label="Your email">
+          <textarea name="message" placeholder="Message*" required aria-label="Your message"></textarea>
+          <button id="submit" type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+
+ <!-- foooote section  -->
+
+    <footer>
+      <div>
+        <!-- <span>aCopyright © 2024 All Rights Reserved</span> -->
+       <a href="#"><span>Copyright © 2024 All Rights Reserved</span></a> 
+
+        <span class="link">
+            <a href="#">Home</a>
+            <a href="#contact">Contact</a>
+        </span>
+      </div>
+    </footer>
+
+  </body>
+</html>
